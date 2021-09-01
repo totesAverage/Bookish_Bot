@@ -1,2 +1,4 @@
+# Details
+
 This folder contains the functions of the bot. They are stored as cogs. 
 This will make it easier to create multiple functions for the bot without the code getting too messy.
