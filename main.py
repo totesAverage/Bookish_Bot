@@ -12,10 +12,12 @@ client = commands.Bot(command_prefix='&',activity=thing,status=discord.Status.on
 @client.command()
 async def load(ctx, extension):
   client.load_extension(f'cogs.{extension}')
+
 # Unloads cogs from the bot
 @client.command()
 async def unload(ctx, extension):
   client.unload_extension(f'cogs.{extension}')
+
 # Loads a cog that you wish
 for filename in os.listdir('./cogs'):
   if filename.endswith('.py'):
