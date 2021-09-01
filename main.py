@@ -18,7 +18,7 @@ async def load(ctx, extension):
 async def unload(ctx, extension):
   client.unload_extension(f'cogs.{extension}')
 
-# Loads a cog that you wish
+# Accesses a cog that you are going to use 
 for filename in os.listdir('./cogs'):
   if filename.endswith('.py'):
     client.load_extension(f'cogs.{filename[:-3]}')
